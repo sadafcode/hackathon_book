@@ -1,0 +1,165 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  color: white; /* Ensure text is visible on dark background */
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.heroBackgroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire area */
+  z-index: -1; /* Behind content */
+  display: block; /* Ensure it behaves as a block element */
+  /* opacity: 0.9; /* Temporarily removed */
+  animation: backgroundAnimation 15s ease infinite alternate; /* Subtle animation */
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.customButton {
+  background-color: #4080FF; /* Darker blue, AI-themed */
+  border: 2px solid black; /* Black outline */
+  color: white;
+  font-weight: bold;
+  padding: 1rem 2rem; /* Adjusted padding */
+  border-radius: 8px; /* Slightly rounded corners */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Stronger default shadow */
+  font-size: 1.2rem; /* Make text a bit larger */
+}
+
+.customButton:hover {
+  background-color: #3A75E6; /* Slightly darker blue on hover */
+  transform: translateY(-5px); /* Lift effect */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7); /* Enhanced shadow on hover */
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.featureSvg {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 1rem;
+  color: #00bcd4; /* Use accent color for SVGs */
+}
+
+.text--center h2 {
+  color: #001f3f; /* Dark text for headings in main section */
+}
+
+html[data-theme='dark'] .text--center h2 {
+  color: #00bcd4; /* Light accent for headings in dark mode */
+}
+
+/* Ensure content is above the background */
+.heroBanner > .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Adjust hero title and subtitle for better contrast */
+.hero__title {
+  color: #ffffff; /* Ensure text color is white for contrast */
+  font-size: 2.5rem; /* Smaller font size */
+  text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000,
+    -2px 0px 0 #000,
+    0px -2px 0 #000,
+    2px 0px 0 #000,
+    0px 3px 0 #000,
+    5px 5px 10px rgba(0, 0, 0, 0.9); /* Stronger, deeper black shadow */
+}
+
+@media screen and (min-width: 997px) {
+  .hero__title {
+    font-size: 3.5rem; /* Even smaller on desktop */
+  }
+}
+
+.hero__subtitle {
+  color: #ffffff; /* Ensure text color is white for contrast */
+  font-size: 1.2rem; /* Smaller font size for subtitle */
+  text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000,
+    -2px 0px 0 #000,
+    0px -2px 0 #000,
+    2px 0px 0 #000,
+    0px 3px 0 #000,
+    5px 5px 10px rgba(0, 0, 0, 0.9); /* Stronger, deeper black shadow */
+}
+
+@media screen and (min-width: 997px) {
+  .hero__subtitle {
+    font-size: 1.5rem; /* Even smaller on desktop */
+  }
+}
+
+.featureCard {
+  background-color: rgba(0, 0, 0, 0.6); /* Dark, semi-transparent background */
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 5px 15px rgba(0, 188, 212, 0.4); /* AI-themed shadow */
+  transition: all 0.3s ease;
+  cursor: pointer;
+  height: 100%; /* Ensure cards have equal height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.featureCard:hover {
+  transform: translateY(-8px); /* Lift effect */
+  box-shadow: 0 8px 25px rgba(0, 188, 212, 0.6); /* Enhanced shadow on hover */
+}
+
+.featureCard h3 {
+  color: #00bcd4; /* Accent color for titles */
+  margin-top: 1rem;
+}
+
+.featureCard p {
+  color: #e0e0e0; /* Light gray for text */
+}
