@@ -22,6 +22,7 @@ const config: Config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'sadafcode', // Your GitHub username or organization name.
   projectName: 'hackathon_book', // Your GitHub repo name.
+  deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
 
@@ -44,21 +45,6 @@ const config: Config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -87,7 +73,6 @@ const config: Config = {
           label: 'Physical AI & Humanoid Robotics',
           to: '/01-introduction-to-physical-ai-humanoid-robotics',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
@@ -127,10 +112,6 @@ const config: Config = {
         {
           title: 'More',
           items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
             {
               label: 'GitHub',
               href: 'https://github.com/facebook/docusaurus',

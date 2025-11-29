@@ -6,15 +6,15 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #007bff; /* A vibrant blue for the primary color */
+  --ifm-color-primary-dark: #0069d9;
+  --ifm-color-primary-darker: #0062cc;
+  --ifm-color-primary-darkest: #0056b3;
+  --ifm-color-primary-light: #268aff;
+  --ifm-color-primary-lighter: #3395ff;
+  --ifm-color-primary-lightest: #59a9ff;
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3); /* Darker for better contrast */
 }
 
 .hero--primary {
@@ -23,12 +23,12 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #00BCD4; /* Cyan for dark mode primary, matches image's neon accents */
+  --ifm-color-primary-dark: #00ACC1;
+  --ifm-color-primary-darker: #0097A7;
+  --ifm-color-primary-darkest: #00838F;
+  --ifm-color-primary-light: #26C6DA;
+  --ifm-color-primary-lighter: #4DD0E1;
+  --ifm-color-primary-lightest: #80DEEA;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 188, 212, 0.3); /* Neon cyan highlight for code */
 }

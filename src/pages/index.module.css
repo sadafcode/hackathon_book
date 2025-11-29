@@ -47,22 +47,22 @@
 }
 
 .customButton {
-  background-color: #4080FF; /* Darker blue, AI-themed */
-  border: 2px solid black; /* Black outline */
+  background-color: #007bff; /* Deep blue from new primary color */
+  border: 2px solid #00bcd4; /* Neon cyan border */
   color: white;
   font-weight: bold;
-  padding: 1rem 2rem; /* Adjusted padding */
-  border-radius: 8px; /* Slightly rounded corners */
+  padding: 1rem 2rem;
+  border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Stronger default shadow */
-  font-size: 1.2rem; /* Make text a bit larger */
+  box-shadow: 0 5px 15px rgba(0, 188, 212, 0.5); /* Neon cyan shadow */
+  font-size: 1.2rem;
 }
 
 .customButton:hover {
-  background-color: #3A75E6; /* Slightly darker blue on hover */
-  transform: translateY(-5px); /* Lift effect */
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7); /* Enhanced shadow on hover */
+  background-color: #00BCD4; /* Neon cyan on hover */
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 188, 212, 0.8); /* Enhanced neon shadow on hover */
 }
 
 .features {
@@ -76,15 +76,15 @@
   height: 100px;
   width: 100px;
   margin-bottom: 1rem;
-  color: #00bcd4; /* Use accent color for SVGs */
+  color: #00FFFF; /* Bright neon cyan for SVGs */
 }
 
 .text--center h2 {
-  color: #001f3f; /* Dark text for headings in main section */
+  color: #E0FFFF; /* Light neon white/cyan for headings in main section */
 }
 
 html[data-theme='dark'] .text--center h2 {
-  color: #00bcd4; /* Light accent for headings in dark mode */
+  color: #00FFFF; /* Bright neon cyan for headings in dark mode */
 }
 
 /* Ensure content is above the background */
@@ -95,8 +95,8 @@ html[data-theme='dark'] .text--center h2 {
 
 /* Adjust hero title and subtitle for better contrast */
 .hero__title {
-  color: #ffffff; /* Ensure text color is white for contrast */
-  font-size: 2.5rem; /* Smaller font size */
+  color: #E0FFFF; /* Neon white for hero title */
+  font-size: 2.5rem;
   text-shadow:
     -2px -2px 0 #000,
     2px -2px 0 #000,
@@ -106,18 +106,18 @@ html[data-theme='dark'] .text--center h2 {
     0px -2px 0 #000,
     2px 0px 0 #000,
     0px 3px 0 #000,
-    5px 5px 10px rgba(0, 0, 0, 0.9); /* Stronger, deeper black shadow */
+    5px 5px 10px rgba(0, 0, 0, 0.9);
 }
 
 @media screen and (min-width: 997px) {
   .hero__title {
-    font-size: 3.5rem; /* Even smaller on desktop */
+    font-size: 3.5rem;
   }
 }
 
 .hero__subtitle {
-  color: #ffffff; /* Ensure text color is white for contrast */
-  font-size: 1.2rem; /* Smaller font size for subtitle */
+  color: #00FFFF; /* Neon cyan for hero subtitle */
+  font-size: 1.2rem;
   text-shadow:
     -2px -2px 0 #000,
     2px -2px 0 #000,
@@ -127,39 +127,39 @@ html[data-theme='dark'] .text--center h2 {
     0px -2px 0 #000,
     2px 0px 0 #000,
     0px 3px 0 #000,
-    5px 5px 10px rgba(0, 0, 0, 0.9); /* Stronger, deeper black shadow */
+    5px 5px 10px rgba(0, 0, 0, 0.9);
 }
 
 @media screen and (min-width: 997px) {
   .hero__subtitle {
-    font-size: 1.5rem; /* Even smaller on desktop */
+    font-size: 1.5rem;
   }
 }
 
 .featureCard {
-  background-color: rgba(0, 0, 0, 0.6); /* Dark, semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.7); /* Slightly darker, semi-transparent background */
   border-radius: 10px;
   padding: 20px;
   margin: 10px;
-  box-shadow: 0 5px 15px rgba(0, 188, 212, 0.4); /* AI-themed shadow */
+  box-shadow: 0 5px 15px rgba(0, 188, 212, 0.6); /* Stronger neon cyan shadow */
   transition: all 0.3s ease;
   cursor: pointer;
-  height: 100%; /* Ensure cards have equal height */
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .featureCard:hover {
-  transform: translateY(-8px); /* Lift effect */
-  box-shadow: 0 8px 25px rgba(0, 188, 212, 0.6); /* Enhanced shadow on hover */
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 188, 212, 0.9); /* Even stronger neon shadow on hover */
 }
 
 .featureCard h3 {
-  color: #00bcd4; /* Accent color for titles */
+  color: #00FFFF; /* Bright neon cyan for titles */
   margin-top: 1rem;
 }
 
 .featureCard p {
-  color: #e0e0e0; /* Light gray for text */
+  color: #E0FFFF; /* Light neon white/cyan for text */
 }

@@ -20,7 +20,7 @@
   right: 20px;
   width: 350px;
   height: 500px;
-  background-color: white;
+  background-color: #1a1a2e; /* Dark background for chat window */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -69,26 +69,27 @@
 }
 
 .user {
-  background-color: #dcf8c6;
+  background-color: #007bff; /* Darker blue for user messages */
   align-self: flex-end;
-  color: #000;
+  color: #E0FFFF; /* Neon white for user message text */
 }
 
 .bot {
-  background-color: #f1f0f0;
+  background-color: #4CAF50; /* Changed to an appropriate color. */
   align-self: flex-start;
-  color: #000;
+  color: #E0FFFF; /* Neon white for bot message text */
 }
 
 .chatInput {
   padding: 10px;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #333; /* Darker border for input */
 }
 
 .chatInput input {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #555; /* Darker border for input field */
   border-radius: 5px;
+  background-color: #333; /* Dark background for input field */
+  color: #E0FFFF; /* Neon white text for input */
 }
-
