@@ -7,7 +7,7 @@ The project utilizes a Spec-Driven Development (SDD) workflow, where content is 
 ## Installation
 
 ```bash
-yarn
+yarn install
 ```
 
 ## Local Development
