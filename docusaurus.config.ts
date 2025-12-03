@@ -9,6 +9,10 @@ const config: Config = {
   tagline: 'Bridging the Digital Brain and Physical Body',
   favicon: 'img/favicon.ico',
 
+  customFields: {
+    chatbotApiUrl: process.env.CHATBOT_API_URL || 'http://localhost:8000', // Default to localhost for dev
+  },
+
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4

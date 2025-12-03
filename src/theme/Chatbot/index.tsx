@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
 import { useSelectedText } from '@site/src/contexts/SelectedTextContext';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext'; // Add this import
 
 const Chatbot = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,8 +13,12 @@ const Chatbot = () => {
   const [error, setError] = useState<string | null>(null);
 
   const { selectedText, clearSelectedText } = useSelectedText();
-  const messagesEndRef = useRef(null);
-
+        const messagesEndRef = useRef(null);
+  
+        const { siteConfig } = useDocusaurusContext(); // Get siteConfig
+  
+        // Extract chatbotApiUrl from customFields
+        const chatbotApiUrl = siteConfig.customFields.chatbotApiUrl as string;
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   };
@@ -46,7 +51,7 @@ const Chatbot = () => {
       setError(null);
 
       try {
-        const response = await fetch('http://localhost:8000/chat', {
+        const response = await fetch(`${chatbotApiUrl}/chat`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
