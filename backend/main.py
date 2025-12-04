@@ -13,7 +13,7 @@ app = FastAPI()
 origins = [
     "http://localhost:3000",  # Allow Docusaurus dev server
     "http://localhost:8000",  # Allow FastAPI dev server itself
-    # Add your deployed Docusaurus URL here in production
+    "https://sadafcode.github.io",  # GitHub Pages production URL
 ]
 
 app.add_middleware(
